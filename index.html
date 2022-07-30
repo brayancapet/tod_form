@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <title>Styling</title>
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="title">
+
+            <form action="http://httpbin.org/post" method="post">
+                <fieldset>
+                    <label for="firstName">Name <span class="green">*</span></label>
+                    <input type="text" id="firstName" placeholder="Luffy.." name="firstName" minlength="2" maxlength="30" required>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="user_email">Email Address <span class="green">*</span></label>
+                    <input type="email" id="user_email" name="email" maxlength="50" required>
+                    <p id="infos">you@example.com</p>
+                </fieldset>
+                
+                <fieldset>
+                    <label for="user_password">Password <span class="green">*</span></label>
+                    <input type="password" id="user_password" name="password" minlength="8" required>
+                </fieldset>
+
+                <fieldset id="submit">
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
